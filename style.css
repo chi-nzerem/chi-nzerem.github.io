@@ -1,70 +1,151 @@
-/* Reset some default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin-bottom: 0.5rem;
-  }
-  
-  header p {
-    font-size: 1.2rem;
-  }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  section {
-    padding: 2rem 0;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .project {
-    margin-bottom: 2rem;
-  }
-  
-  .project h3 {
-    font-size: 1.5rem;
-  }
-  
-  .project p {
-    margin-bottom: 0.5rem;
-  }
-  
-  .project a {
-    color: #1E90FF;
-    text-decoration: none;
-  }
-  
-  .project a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.profile h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.profile p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.about, .skills {
+  margin-top: 40px;
+}
+
+.about h2, .skills h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.skills li {
+  background-color: #e3e3e3;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.content {
+  width: 75%;
+  padding: 20px;
+}
+
+.projects, .experience, .education {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 150px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+}
+
+.project-info p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.tech-stack {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.project-info a {
+  margin-top: 10px;
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+.experience-item, .education-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3, .education-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.experience-item span, .education-item span {
+  font-size: 0.9rem;
+  color: #777;
+}
